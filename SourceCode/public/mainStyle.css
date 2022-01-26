@@ -1,0 +1,302 @@
+body {
+  font-family: "Raleway", "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+    sans-serif, sans-serif;
+  height: 100%;
+  display: grid;
+  grid-template-rows: 1fr auto;
+}
+html {
+  height: 100%;
+}
+.page-footer {
+  background-color: #0c1d25;
+}
+.page-footer li,
+a {
+  color: #828080;
+}
+.navbar {
+  height: 80px;
+  background-color: rgb(22, 49, 62);
+}
+.navbar a {
+  color: white;
+}
+.nav-link {
+  position: relative;
+}
+#currentPage:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 0;
+  position: absolute;
+  background: #316c89;
+  width: 100%;
+}
+.nav-link:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: rgb(193, 61, 54);
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+.nav-link:hover:after {
+  width: 100%;
+  left: 0;
+}
+#collapsibleNavbar {
+  background-color: rgb(22, 49, 62);
+}
+#navbarDropdown:after {
+  content: none;
+}
+.navbar input {
+  border: none;
+  width: 170px;
+}
+@media (max-width: 768px) {
+  #searchBox {
+    position: fixed;
+    width: auto;
+    top: 70px;
+    left: 0;
+    right: 0;
+  }
+}
+.dropdown-menu-md-right {
+  width: max-content;
+}
+.form-inline .input-group {
+  width: -webkit-fill-available !important;
+}
+.content {
+  margin-top: 50px;
+  padding: 0;
+}
+.content a {
+  color: rgb(22, 49, 62);
+}
+#headerCarousel img {
+  height: 600px;
+}
+#headerCarousel > .carousel-indicators li {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+}
+#headerCarousel .carousel-caption {
+  top: 50%;
+}
+#headerCarousel .carousel-caption > h1 {
+  margin-bottom: 75px;
+}
+#exploreBtn {
+  text-decoration: none;
+  background-color: rgb(22, 49, 62);
+  color: #fff;
+  display: inline-block;
+  padding: 2px 20px;
+  position: relative;
+  text-decoration: none;
+  transition: 0.75s all ease;
+  font-weight: 700;
+  z-index: 12;
+}
+.bridge-title a {
+  background-color: rgb(193, 61, 54);
+  color: white;
+}
+
+#headerCarousel .carousel-item {
+  transition: -webkit-transform 1s ease-in-out !important;
+  transition: transform 1s ease-in-out !important;
+  transition: transform 1s ease-in-out, -webkit-transform 1s ease-in-out !important;
+}
+.category .carousel-item, .relatedBridges .carousel-item, #galleryCarousel .carousel-item {
+  transition: -webkit-transform 0.2s ease-in-out !important;
+  transition: transform 0.2s ease-in-out !important;
+  transition: transform 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out !important;
+}
+.carousel-control-next,
+.carousel-control-prev {
+  top: 45%;
+  bottom: 55%;
+}
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+  width: 50px;
+  height: 50px;
+}
+.categoryName {
+  position: relative;
+}
+.category h3,
+.relatedBridges h3 {
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+.category h3:before,
+.category h3:after,
+.relatedBridges h3:before,
+.relatedBridges h3:after {
+  background-color: #000;
+  content: "";
+  display: inline-block;
+  height: 2px;
+  position: relative;
+  vertical-align: middle;
+  width: 10%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.category h3:before,
+.relatedBridges h3:before {
+  right: 5%;
+}
+.category h3:after,
+.relatedBridges h3:after {
+  left: 5%;
+}
+.h3-category:after {
+  background-color: #000;
+  content: "";
+  display: inline-block;
+  height: 1px;
+  vertical-align: middle;
+  width: 15%;
+  margin-left: 20px;
+}
+
+.card {
+  border: none;
+}
+
+.page-footer {
+  background-color: rgb(22, 49, 62);
+}
+.card,
+#bridgeImages {
+  /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+  box-shadow: rgba(101, 119, 134, 0.2) 0px 0px 7px,
+    rgba(101, 119, 134, 0.15) 0px 1px 3px 1px;
+}
+#galleryCarousel .carousel-inner {
+  display: flex;
+  align-items: center;
+}
+.imageWrapper {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.imageWrapper > img {
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+}
+.category .imageWrapper, #relatedBridgeCarousel .imageWrapper {
+  border: 1px solid #eee;
+}
+.accordion h4 {
+  padding-left: 0;
+}
+#accordionBridge > hr {
+  border: 0.5px solid black;
+}
+#collapseOne hr:last-child {
+  display: none;
+}
+#categoryCarousel .carousel-item {
+  height: 200px;
+}
+.flex-column {
+  max-width: 25%;
+}
+#photo-grid img {
+  cursor: pointer;
+}
+#imageModal .close {
+  font-size: 50px;
+  color: white;
+}
+#galleryCarousel img {
+  width: auto;
+  height: auto;
+  max-width: 100vw;
+  max-height: 100vh;
+}
+#galleryCarousel .carousel-caption {
+  z-index: 1030;
+  top: 0;
+  bottom: auto;
+  padding: 10px;
+}
+#galleryCarousel .carousel-caption h3 {
+  background-color: rgba(0, 0, 0, 0.3);
+  width: fit-content;
+  margin: auto;
+  padding: 0 10px;
+}
+.hovereffect {
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  pointer-events: none;
+  margin: 5px;
+}
+.hovereffect img {
+  pointer-events: auto;
+}
+.hovereffect .overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out
+}
+.hovereffect:hover .overlay {
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+#bridgeImages img {
+  cursor: zoom-in;
+}
+#bridgeImages > .carousel-indicators li {
+  background-color: #eee;
+}
+.fdi-Carousel .carousel-inner .active.carousel-item,
+.fdi-Carousel .carousel-inner .carousel-item-next,
+.fdi-Carousel .carousel-inner .carousel-item-prev {
+  display: flex;
+}
+.fdi-Carousel .carousel-inner .active.carousel-item-left,
+.fdi-Carousel .carousel-inner .carousel-item-prev {
+  transform: translateX(-25%);
+}
+.fdi-Carousel .carousel-inner .active.carousel-item-right,
+.fdi-Carousel .carousel-inner .carousel-item-next {
+  transform: translateX(25%);
+}
+.fdi-Carousel .carousel-inner .carousel-item-left,
+.fdi-Carousel .carousel-inner .carousel-item-right {
+  transform: translateX(0);
+}
+.title {
+  color: grey;
+}

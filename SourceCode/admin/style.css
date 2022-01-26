@@ -1,0 +1,11 @@
+input:placeholder-shown {
+    opacity: 0.5;
+}
+#example_length label {
+    white-space: nowrap;
+}
+
+.dataTables_filter input {
+    display: inline-block;
+    width: auto;
+}
